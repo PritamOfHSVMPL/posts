@@ -19,7 +19,7 @@ const AddPostForm = () => {
       const data ={ ...values , id : nanoid() , time :  new Date().toLocaleString() , tags : values.tags.split(',')}
  
       dispatch(addPost(data));
-         navigate("/posts");
+         navigate("/");
 
     
     }
@@ -29,7 +29,7 @@ const AddPostForm = () => {
     <div className="flex justify-center items-center h-[100vh]  ">
       <div className="block p-6 m-4 border-2 rounded-lg shadow-lg w-full max-w-md">
         <button
-          onClick={() => navigate("/posts")}
+          onClick={() => navigate("/")}
           type="button"
           className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out fixed right-2 top-2"
         >
