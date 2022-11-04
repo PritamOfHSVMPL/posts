@@ -6,10 +6,7 @@ import Posts from "./app/container/Posts";
 import { useNavigate } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate()
-  useEffect(()=>{
-    navigate("/posts")
-  },[])
+  
   return (
     <div>
       <Router />
